@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>какой-то social network</title>
+        <link href="styles.css" type="text/css" rel="stylesheet">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div class="background">
+            <div class="tabheadcontainer">
+                <div class="tabhead active" onclick="openPage('Profile', this, 'yellow')">
+                    Профиль
+                </div>
+                <div class="tabhead" onclick="openPage('Friends', this, 'white')">
+                    Друзья Пользователя
+                </div>
+            </div>
+            <div>
+                <section>
+                    <div id="Profile" class="tabcontent">
+                        <article>    
+                            <img src="img/котик.png" alt="profile photo"><br>
+                            <button id="tobefriend">Добавить в друзья</button>
+                        </article>  
+                        <article>
+                            <div class="box">
+                                <input type="name" id=user value="Виталя Гора"><br>
+                                <input type="town" id=town value="г. Нижние Шахты">
+                            </div>  
+                         </article> 
+                        <article>
+                            <label for="status">Семейное положение</label>
+                            <input type="text" id="status" value="холост" placeholder="женат"><br>   
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" value="+7 (440) 554-32-12" placeholder="+7 (999) 999-99-99"><br>  
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" value="vitalya@gora.ru" placeholder="your@mail.ru">
+                        </article>
+                    </div>
+                </section>
+                <div id="Friends" class="tabcontent">
+                    <p>У пользователя нет друзей, только поклонники</p>
+                </div>
+            </div>
+
+
+        </div>
+        
+    </body>
+</html>

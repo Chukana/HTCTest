@@ -1,0 +1,91 @@
+/*.tab {
+    overflow: hidden;
+    border: 1px;
+    background-color: royalblue;
+}*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-weight: bold;
+    font-size: 12pt;
+  }
+.background {
+    align-items: center;
+    background-color: #e3e3e3;
+    width: 800px;
+    height: 600px;
+    box-shadow: 10px 10px 5px grey;
+}
+/*.tabhead {
+    width: 300px;
+    height: 100px;
+    border: 10px solid black;
+    padding: 30px;
+    margin: 10px;
+    float: left;
+}*/
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tabheadcontainer{
+    height: 100px;
+}
+.tabhead {
+    background-color: rgb(64, 61, 248);
+    color: white;
+    float: left;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    font-size: 12px;
+    width: 25%;
+  }
+
+.tabhead.active {
+    background-color:white;
+    color: black;
+}
+.tabhead:hover {
+    background-color: #777;
+  }
+input#status {
+    border: none;
+    outline: none;
+}
+input#email {
+    border: none;
+    outline: none;
+}
+input#phone {
+    border: none;
+    outline: none;
+}
+input#town {
+    border: none;
+    outline: none;
+
+}
+input#user {
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 18pt;
+}
+#tobefriend {background-color: orangered;
+    height: 40px;
+    text-emphasis-color: white;
+    border-radius: 5px;
+}
+    form {
+    text-align: center;
+}
+*h1 {
+    image-rendering: initial;
+}
+
