@@ -3,55 +3,64 @@
     <head>
         <meta charset="utf-8">
         <title>какой-то social network</title>
-        <link href="styles.css" type="text/css" rel="stylesheet">
-        <script src="main.js"></script>
+        <link href="styles.css" type="text/css" rel="stylesheet">    
     </head>
     <body>
         <div class="background">
             <div class="block">
                 <div class="tabheadcontainer">
-                    <div class="tabhead active" onclick="openPage('Profile', this, 'yellow')">
-                        Профиль
-                    </div>
-                    <div class="tabhead" onclick="openPage('Friends', this, 'white')">
-                        Друзья Пользователя
-                    </div>
+                    <div class="tabhead active" data-id-folder="Profile">Профиль</div>
+                    <div class="tabhead" data-id-folder="Friends">Друзья пользователя</div>
                 </div>
                 <div class="folder">
-                    <div id="Profile active" class="box">
+                    <div id="Profile" class="box active">
                         <div class="avatar">
-                            <img src="img/котик.png" alt="profile photo"><br>
+                            <img src="img/kotik.png" alt="profile photo"><br>
                             <button id="tobefriend">Добавить в друзья</button>
                         </div>
                         <div class="user name">
-                            <div>
-                                <label contenteditable="true">Виталя Гора</label><br>
-                                <label contenteditable="true">г. Нижние шахты</label>
+                            <div class="user-data">
+                                <p class="user-name" contenteditable="true">Виталя Гора</p>
+                                <p class="user-town" contenteditable="true">г. Нижние шахты</p>
                             </div>
-                            <div class="user data">
-                                <label for="status">Семейное положение</label>
-                                <input type="text" id="status" value="холост" placeholder="женат"><br>   
-                                <label for="phone">Телефон</label>
-                                <input type="tel" id="phone" value="+7 (440) 554-32-12" placeholder="+7 (999) 999-99-99"><br>  
-                                <label for="email">E-mail</label>
-                                <input type="email" id="email" value="vitalya@gora.ru" placeholder="your@mail.ru">
+                            <div class="data user-data">
+                                <table>
+                                    <tr>
+                                        <td>Семейное положение</td>
+                                        <td>
+                                            <input type="text" id="status" value="холост" placeholder="женат">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Телефон</td>
+                                        <td>
+                                            <input type="tel" id="phone" value="+7 (440) 554-32-12" placeholder="+7 (999) 999-99-99">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>E-mail</td>
+                                        <td> 
+                                            <a href="#">vitalya@gora.ru</a>
+                                        </td>
+                                    </tr>
+                                </table>
                             </div> 
-                            <div class="interest">
-                                <label for="music"> Интересы</label><br>
+                            <div class="interest user-data">
+                                <label for="music"> Интересы</label>
                                 <div class="hobbies">
                                     <input type="button" id="music" value="музыка">
                                     <input type="button" id="computer" value="компьютеры">
                                     <input type="button" id="radio" value="радио">
                                 </div>
-                                
                             </div>   
                         </div>    
                     </div>
-                    <div id="Friends" class="tabcontent">
+                    <div id="Friends" class="box">
                         <p>У пользователя нет друзей, только поклонники</p>
                     </div>
                 </div>
             </div>
         </div>
+        <script src="main.js"></script>
     </body>
 </html>
