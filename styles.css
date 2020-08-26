@@ -153,9 +153,10 @@ td a {
     color: #1870ae;
     padding: 0 0 0 10px;
 }
-.data {
-    margin-left: -5px;
-}
+/*
+#info td:first-child + td {
+    margin-left: 10px;
+}*/
 .hobbies.button {
     background-color: white;
 }
