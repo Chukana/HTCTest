@@ -9,8 +9,7 @@ body, html {
     margin: 0;
     font-size: 10pt;
     font-family: Arial, Helvetica, sans-serif;
-  }
-
+}
 p {
     margin-block-start: 0;
     margin-block-end: 0;
@@ -96,8 +95,7 @@ table {
     cursor: pointer;
     padding: 10px 10px;
     font-size: 13px;
-  }
-
+}
 .tabhead.active {
     background-color:white;
     color: black;
@@ -105,11 +103,11 @@ table {
 }
 .tabhead:hover {
     background-color: #777;
-  }
-.button {
+}
+/*.button {
     background-color: #fff;
     border: 1px solid #ddd;
-}  
+} */ 
 input#status {
     border: none;
     outline: none;
@@ -144,7 +142,14 @@ input#user {
     color: #1870ae;
     margin-top: 7px;
     height: 27px;
-
+    background-color: white;
+    border: solid 1px lightgray;
+    border-radius: 2px;
+}
+.hobbies input:hover {
+    background-color: #f7f5f5;
+    border: solid 1px lightgray;
+    color: black;
 }
 .interest label {
     font-weight: bolder;
@@ -157,9 +162,9 @@ td a {
 #info td:first-child + td {
     margin-left: 10px;
 }*/
-.hobbies.button {
-    background-color: white;
-}
+/*.hobbies.button {
+    background-color: gray;
+}*/
 /**h1 {
     image-rendering: initial;
 }*/
